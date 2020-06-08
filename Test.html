@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<video id="myvideo" width="600px" height="auto" controls>
+    <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+</video>
+
+
+<canvas id="myCanvas" width="600" height="auto"
+style="border:1px solid #d3d3d3;">
+Trình duyệt của bạn không hỗ trợ canvas.
+</canvas>
+
+<script>
+    function myCanvas() {
+        var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("myvideo");
+    ctx.drawImage(img, 10, 10);
+    }
+    </script>
+
+</body>
+</html>
